@@ -1,0 +1,11 @@
+{
+  "_status": "DRAFT thresholds for Milestone RL (see docs/WORK_ORDERS.md). Owner must confirm before they are treated as final.",
+  "survival_1x": 1.0,
+  "survival_3x": 0.95,
+  "mean_final_improvement": 0.20,
+  "action_rate_max_ratio": 1.5,
+  "manual_checks": [
+    "Observations come from the IMU model + estimator, not true state",
+    "Full pipeline reproducible from documented commands and seeds"
+  ]
+}

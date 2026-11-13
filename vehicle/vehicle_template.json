@@ -1,0 +1,32 @@
+{
+  "_readme": "PLACEHOLDER values matching the built-in model. Replace with numbers from CAD. SI units only (m, kg, kg*m^2, N, s). x positions are measured FORWARD (toward the nose) from the gimbal pivot. Inertias are about the CENTER OF MASS, with Ixx = roll axis (along the rocket), Iyy = lateral. See docs/cad_export_checklist.md.",
+  "dimensions": {
+    "length_m": 0.60,
+    "radius_m": 0.03
+  },
+  "mass_properties": {
+    "ignition": { "mass_kg": 1.0, "x_cm_m": 0.2719, "Ixx_kgm2": 0.000433, "Iyy_kgm2": 0.030296 },
+    "burnout": { "mass_kg": 0.955, "x_cm_m": 0.28, "Ixx_kgm2": 0.00043, "Iyy_kgm2": 0.028865 }
+  },
+  "aero": {
+    "x_cp_m": 0.20,
+    "cn_alpha_per_rad": 8.0,
+    "cd_axial": 0.5,
+    "cd_normal": 1.0
+  },
+  "tvc": {
+    "gimbal_max_deg": 8.0,
+    "servo_rate_max_deg_s": 286.0,
+    "servo_tau_s": 0.03,
+    "servo_delay_s": 0.01
+  },
+  "launch_rail": {
+    "length_m": 1.0,
+    "exit_offset_m": 0.10
+  },
+  "motor": {
+    "propellant_mass_kg": 0.045,
+    "time_s": [0.0, 0.1, 0.5, 2.5, 3.0, 3.3],
+    "thrust_N": [0.0, 32.0, 28.0, 22.0, 8.0, 0.0]
+  }
+}

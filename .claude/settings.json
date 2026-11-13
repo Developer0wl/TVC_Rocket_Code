@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe -m pytest:*)",
+      "Bash(.venv/Scripts/python.exe -m ruff:*)",
+      "Bash(.venv/Scripts/python.exe scripts/*)",
+      "Bash(.venv/Scripts/python.exe -m pip install -e:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".venv/Scripts/python.exe .claude/hooks/ruff_fix.py"
+          }
+        ]
+      }
+    ]
+  }
+}

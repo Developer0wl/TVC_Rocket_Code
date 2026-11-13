@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+outputs/
+runs/
+mlruns/
+*.onnx
+.claude/settings.local.json
